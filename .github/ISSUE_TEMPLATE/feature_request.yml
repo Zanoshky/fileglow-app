@@ -1,0 +1,75 @@
+name: Feature request
+description: An idea for something Fileglow could do.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want
+      description: Describe the feature in a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it help you do? A real example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or feature?"
+      options:
+        - "home"
+        - "files (browsing and folders)"
+        - "find"
+        - "selection and file actions"
+        - "copy, move and paste"
+        - "names already here (keep both, skip, replace)"
+        - "rename"
+        - "zip and unzip"
+        - "trash and undo"
+        - "previews"
+        - "open with and send to another app"
+        - "picker for other apps or save a copy"
+        - "installing app files"
+        - "settings"
+        - "look and themes"
+        - "launcher looks (phosphor or hyprtile)"
+        - "privacy page"
+        - "pro and the purchase"
+        - "network shares (smb, sftp, ftp, webdav)"
+        - "dropbox"
+        - "films from a share"
+        - "wi-fi transfer"
+        - "vault"
+        - "archives as folders"
+        - "search inside files"
+        - "two tiles and workspaces"
+        - "folder mirrors"
+        - "find duplicates"
+        - "sort photos and put photos back"
+        - "app data with shizuku"
+        - "accessibility (talkback, text size)"
+        - "tv: side rail and remote"
+        - "tv: actions and sheets"
+        - "tv: open with"
+        - "tv: usb drives"
+        - "tv: qr codes (open on your phone)"
+        - "other"
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Pictures or links
+      description: A sketch, a screenshot or a link to something similar.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this idea is not there yet.
+          required: true
