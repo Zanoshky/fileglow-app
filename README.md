@@ -21,7 +21,7 @@ This repo is the public home for Fileglow users: the user guide, bug reports and
 
 ## Quick start
 
-1. Install Fileglow from Google Play. It runs on Android 7 or newer, and on Android TV and Google TV.
+1. Install Fileglow from Google Play. It runs on Android 10 or newer, and on Android TV and Google TV.
 2. Allow All files access when Fileglow asks, so it can show, copy, move and delete your files.
 3. Home shows your storage, what fills it, recent files and the folders you open most.
 4. Open Files, touch and hold a row to pick files, then copy, move, rename, zip or move them to the trash. Undo brings them back.
