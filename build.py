@@ -202,7 +202,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission Fileglow holds and why, how shares and transfers are kept safe, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, the privacy policy and the credits.</dd></div>
           <div><dt>More apps</dt><dd>Hyprtile and Phosphor, the launchers whose looks Fileglow can wear.</dd></div>
-          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky. Support And Live API is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and for keeping the Dropbox and OneDrive links working. It unlocks nothing. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd></div>
+          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and for keeping the Dropbox and OneDrive links working. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd></div>
           <div><dt>About</dt><dd>The version. Your files go only where you send them: Fileglow has no server of its own.</dd></div>
         </dl>
       </div>
@@ -289,8 +289,8 @@ page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy w
     <ol><li>Settings, Look.</li><li>With Phosphor or Hyprtile as your home screen, turn on Match my launcher. Without them, pick a launcher look.</li></ol>
 
     <h2>Support Fileglow monthly</h2>
-    <ol><li>Settings, Support the developer.</li><li>Tap Support And Live API. Google Play shows the price and how to cancel.</li></ol>
-    <p>Optional, and it unlocks nothing. Tap the row again to manage or cancel it.</p>
+    <ol><li>Settings, Support the developer.</li><li>Tap Insider. Google Play shows the price and how to cancel.</li></ol>
+    <p>Optional. Insiders get new features first and their requests read first. Tap the row again to manage or cancel it.</p>
     </div>
 """)
 
@@ -336,7 +336,7 @@ page("runbook.html", "Runbook", "When something in Fileglow goes wrong: a share 
     <ol><li>Sign in to the Play Store with the Google account that bought Pro.</li><li>Open Settings, Pro again.</li></ol>
 
     <h2>The subscription will not start</h2>
-    <p>Support And Live API runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
+    <p>Insider runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
     <ol><li>Open the Play Store once and check you are signed in.</li><li>Update Fileglow and the Play Store, then try the row again.</li></ol>
     <p>To cancel: tap the same row, or Play Store, your profile, Payments and subscriptions.</p>
     </div>
@@ -371,8 +371,8 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <h2>I bought Pro but it is still locked</h2>
     <p>Fileglow checks the purchase with Google Play. Make sure the Play Store is signed in with the Google account that bought Pro, then open Settings, Pro again.</p>
 
-    <h2>What is Support And Live API?</h2>
-    <p>An optional subscription, 0.99 USD or EUR a month, for those who want to help more. It pays for bug fixes and for keeping the Dropbox and OneDrive links working. It unlocks nothing, and nothing is locked without it. Find it in Settings, under Support the developer. Cancel any time in Google Play.</p>
+    <h2>What is Insider?</h2>
+    <p>An optional subscription, 0.99 USD or EUR a month, for those who want to help more. It pays for bug fixes and for keeping the Dropbox and OneDrive links working. Insiders get new features before everyone else (each one opens to every user on a set date), their bug reports and ideas read first, and an Insider mark in About with their date. Nothing free or in Pro ever moves behind it. Find it in Settings, under Support the developer. Cancel any time in Google Play.</p>
 
     <h2>Sort photos made no place folders</h2>
     <p>Only photos that carry a place get one. Fileglow may ask for Photo locations, only when no photo shows its place. Sort photos works on the phone's own storage; copy photos there first. Put photos back, in the folder's More, undoes a sort.</p>
@@ -406,6 +406,13 @@ page("report.html", "Report a bug", "How to report a Fileglow bug or ask for a f
       <div class="card plate"><h2 class="h3">Bug report</h2><p>Something does not work, looks wrong, or crashes.</p><a class="key filled" href="{REPO}/issues/new?template=bug_report.yml">Report a bug</a></div>
       <div class="card plate"><h2 class="h3">Feature request</h2><p>A tool or something you would like Fileglow to do.</p><a class="key tonal" href="{REPO}/issues/new?template=feature_request.yml">Ask for a feature</a></div>
     </div>
+    <p id="insider" hidden><b>Insider:</b> your request is read first. The title starts with [insider] so it stands out.</p>
+    <script>
+    document.addEventListener('DOMContentLoaded',function(){{if(!/[?&]insider=1(&|$)/.test(location.search))return;
+    var n=document.getElementById('insider');if(n)n.hidden=false;
+    document.querySelectorAll('a[href*="/issues/new"]').forEach(function(a){{var t=/feature_request/.test(a.href)?'[insider] [idea] ':'[insider] [bug] ';a.href+='&title='+encodeURIComponent(t)}});
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){{a.href+=(a.href.indexOf('?')<0?'?':'&')+'subject='+encodeURIComponent('Insider: ')}})}});
+    </script>
     </div>
     <div class="doc">
     <h2>Before you write</h2>
