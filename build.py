@@ -202,7 +202,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission Fileglow holds and why, how shares and transfers are kept safe, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, the privacy policy and the credits.</dd></div>
           <div><dt>More apps</dt><dd>Hyprtile and Phosphor, the launchers whose looks Fileglow can wear.</dd></div>
-          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and for keeping the Dropbox and OneDrive links working. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd></div>
+          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it. Insider is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and for keeping the Dropbox and OneDrive links working. Insiders get new features first, their requests read first, and an Insider mark in About. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd></div>
           <div><dt>About</dt><dd>The version. Your files go only where you send them: Fileglow has no server of its own.</dd></div>
         </dl>
       </div>
