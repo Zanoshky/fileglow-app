@@ -12,7 +12,7 @@ REPO = "https://github.com/Zanoshky/fileglow-app"
 PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.fileglow"
 SITE = "https://fileglow.zanoski.com"
 MAIL = "support@zanoski.com"
-NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
+NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("cookbook.html", "Cookbook"), ("runbook.html", "Runbook"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
 
 CSS = "\n".join((D / f).read_text() for f in ("tokens.css", "style.css"))
 CSS = re.sub(r"/\*.*?\*/", "", CSS, flags=re.S)
@@ -99,6 +99,7 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones, tablets, Android TV and Google TV.</p>
+    <p><strong>In the next update:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="keys">
       <a class="key filled" href="guide.html">Read the guide</a>
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
@@ -136,7 +137,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
     <div class="with-shot">
       <div class="doc">
         <h2>Files</h2>
-        <p>Files opens your storage as folders. Each folder is a list or a grid, sorted by name, date, size or type, and Fileglow remembers the choice per folder (Sort and view, in the folder's More). On a tablet or a phone on its side you get columns: the folder and a preview beside it.</p>
+        <p>Files opens your storage as folders. Each folder is a list or a grid, sorted by name, date, size or type, and Fileglow remembers the choice per folder (sort, grid or list and hidden files sit at the top of the folder's More, with defaults in Settings). On a tablet or a phone on its side you get columns: the folder and a preview beside it.</p>
         <p>Tap a file to open it. Fileglow previews photos, videos, PDFs, music, text, code and what is inside a zip. Touch and hold a row, or tap the tick in the header, to pick files; tap more rows to add them.</p>
         <dl class="rows plate">
           <div><dt>On a file or picked files</dt><dd>Open with, Send to another app, Copy, Move, Rename, Zip, Unzip here, Move to the trash, Delete for good, Details, Copy the path and Pin to Home.</dd></div>
@@ -176,11 +177,11 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
       <p>Fileglow is free with no ads. Pro is one optional payment through Google Play, yours for good: no subscription and no account. Browsing, previews, copy and move with Undo, the trash, zip and unzip, renaming many files at once, Find and Save a copy stay free, and so does every safety check. A Pro control says Pro under its name and opens the list below.</p>
       <dl class="rows plate">
         <div><dt>Network shares</dt><dd>Your NAS, PC or server over SMB, SFTP, FTP and WebDAV, as folders. Add one in Settings, Pro, Network shares and cloud drives, and press Try it before Save.</dd></div>
-        <div><dt>Dropbox</dt><dd>Your Dropbox, as folders. You sign in on Dropbox's own page.</dd></div>
+        <div><dt>Dropbox and OneDrive</dt><dd>Your Dropbox or OneDrive, as folders. You sign in on their own page. OneDrive comes in the next update; until Microsoft finishes checking us, its sign in page says Unverified.</dd></div>
         <div><dt>Films from your shares</dt><dd>Play here plays them straight from the share, with subtitles beside the film; or Play in another app, or Fetch it whole, then open.</dd></div>
         <div><dt>Wi-Fi transfer</dt><dd>Files to and from a computer's browser. Off until you start it: open the address shown on the computer and type the PIN. One computer at a time; it stops on its own after 15 idle minutes, five wrong PINs, or when you leave Wi-Fi.</dd></div>
         <div><dt>Vault</dt><dd>Files sealed with a password of 15 or more characters and hidden from other apps. It locks two minutes after you leave Fileglow. A vault you made opens with its password, with or without Pro.</dd></div>
-        <div><dt>Archives as folders</dt><dd>Open a zip, 7z, rar or tar as a folder, read only. Copy files out to change them.</dd></div>
+        <div><dt>Archives as folders</dt><dd>Open a zip, 7z, rar (RAR5 too) or tar as a folder, read only. Copy files out to change them; moving out of an archive makes a copy. A file that unpacks to more than the free space is stopped before the phone fills.</dd></div>
         <div><dt>Search inside files</dt><dd>Find files by the words in them, from a private index on the phone.</dd></div>
         <div><dt>Two tiles</dt><dd>Two folders at once, side by side on a wide screen and stacked on a phone, with copy or move to the other tile; save them as a workspace on Home.</dd></div>
         <div><dt>Folder mirrors</dt><dd>A phone folder kept copied to a folder on your share, on Wi-Fi while charging. Each file is read back and checked, and nothing is ever deleted.</dd></div>
@@ -201,7 +202,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission Fileglow holds and why, how shares and transfers are kept safe, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, the privacy policy and the credits.</dd></div>
           <div><dt>More apps</dt><dd>Hyprtile and Phosphor, the launchers whose looks Fileglow can wear.</dd></div>
-          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky.</dd></div>
+          <div><dt>Support the developer</dt><dd>If Fileglow helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky. Support And Live API is an optional subscription, 0.99 a month through Google Play, that pays for bug fixes and for keeping the Dropbox and OneDrive links working. It unlocks nothing. Once you subscribe, the row says thank you and opens Google Play, where you cancel any time.</dd></div>
           <div><dt>About</dt><dd>The version. Your files go only where you send them: Fileglow has no server of its own.</dd></div>
         </dl>
       </div>
@@ -248,6 +249,99 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
     </div>
 """)
 
+page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy without writing over, connect a NAS or OneDrive, Wi-Fi transfer, duplicates, sort photos, the vault and more.", f"""
+    <div class="doc">
+    <p class="lbl">Cookbook</p>
+    <h1>Short recipes</h1>
+    <p>A few taps each. Recipes marked Pro need Pro; the rest are free.</p>
+
+    <h2>Get back something you deleted</h2>
+    <ol><li>Tap Undo in the note after the job.</li><li>Missed it? Open the trash from Home, pick the files and put them back.</li></ol>
+
+    <h2>Copy without writing over anything</h2>
+    <ol><li>Pick the files, then Copy.</li><li>Open the folder you want and tap Paste here.</li><li>If names are taken, pick Keep both. The new ones get a number.</li></ol>
+
+    <h2>Rename a batch of photos</h2>
+    <ol><li>Touch and hold one, then tap the others.</li><li>Rename, then find and replace, like IMG_ with Rome_.</li></ol>
+
+    <h2>Open your NAS or PC (Pro)</h2>
+    <ol><li>Settings, Pro, Network shares and cloud drives.</li><li>Pick SMB, SFTP, FTP or WebDAV and fill in the address, user and password.</li><li>Press Try it, then Save. The share shows on Home.</li></ol>
+
+    <h2>Connect Dropbox or OneDrive (Pro)</h2>
+    <ol><li>Settings, Pro, Network shares and cloud drives.</li><li>Pick Dropbox, or OneDrive from the next update, and sign in on its own page.</li></ol>
+
+    <h2>Send files to a computer (Pro)</h2>
+    <ol><li>Settings, Pro, Wi-Fi transfer, and start it.</li><li>Open the address shown in the computer's browser and type the PIN.</li><li>It stops after 15 idle minutes, or when you leave Wi-Fi.</li></ol>
+
+    <h2>Free space from duplicates (Pro)</h2>
+    <ol><li>Open a folder, then More, Find duplicates.</li><li>Check the list. The oldest copy stays; the rest go to the trash, so Undo puts them back.</li></ol>
+
+    <h2>Sort photos by place and date (Pro)</h2>
+    <ol><li>Open DCIM or Pictures, then More, Sort photos into folders.</li><li>Look at the preview tree, then press Sort.</li><li>Changed your mind? More, Put photos back.</li></ol>
+
+    <h2>Keep files in the vault (Pro)</h2>
+    <ol><li>Make a vault with a password of 15 or more characters. A few words make a good one.</li><li>Move files in. It locks two minutes after you leave Fileglow.</li></ol>
+
+    <h2>Keep a folder copied to your NAS (Pro)</h2>
+    <ol><li>Open the folder, then More, Mirror to a share.</li><li>Pick the share folder. It runs on Wi-Fi while charging, and never deletes.</li></ol>
+
+    <h2>Wear your launcher's look</h2>
+    <ol><li>Settings, Look.</li><li>With Phosphor or Hyprtile as your home screen, turn on Match my launcher. Without them, pick a launcher look.</li></ol>
+
+    <h2>Support Fileglow monthly</h2>
+    <ol><li>Settings, Support the developer.</li><li>Tap Support And Live API. Google Play shows the price and how to cancel.</li></ol>
+    <p>Optional, and it unlocks nothing. Tap the row again to manage or cancel it.</p>
+    </div>
+""")
+
+page("runbook.html", "Runbook", "When something in Fileglow goes wrong: a share that will not connect, a cut short copy, an unzip that stopped, OneDrive, search, Android/data, Pro and the subscription.", f"""
+    <div class="doc">
+    <p class="lbl">Runbook</p>
+    <h1>When something goes wrong</h1>
+    <p>What you see, why it happens, and what fixes it. More answers are in the <a href="faq.html">questions</a>.</p>
+
+    <h2>A share will not connect</h2>
+    <p>Fileglow says why: the server was not found, turned the connection down, or did not answer.</p>
+    <ol><li>Check the address, the port, and that sharing is on.</li><li>Check the server is on the same network as the phone.</li><li>Check the user name, password and the shared folder's name.</li><li>An SFTP server whose key changed is refused on purpose. If you reinstalled it, remove the share and add it again.</li></ol>
+
+    <h2>It says a copy was cut short</h2>
+    <p>Fileglow was closed while it copied, zipped or unzipped. The half made copy went to the trash; the originals were not touched.</p>
+    <ol><li>Copy or move again.</li></ol>
+
+    <h2>An unzip or a copy out of an archive stopped</h2>
+    <p>The file unpacks to more than the free space. Fileglow stops before the phone fills, so a zip bomb cannot harm it.</p>
+    <ol><li>Free up space, or unzip to a drive with more room.</li><li>A tiny zip that says it holds gigabytes is not worth opening.</li></ol>
+
+    <h2>OneDrive says Unverified</h2>
+    <p>Microsoft has not finished checking Fileglow as a publisher yet. The sign in is still Microsoft's own page.</p>
+    <ol><li>Check the page is Microsoft's own sign in, then go on.</li></ol>
+
+    <h2>Search inside files misses some</h2>
+    <p>The private index stops after the first 100,000 files.</p>
+    <ol><li>Search from the folder you need rather than the whole phone.</li></ol>
+
+    <h2>Android/data is empty</h2>
+    <p>Android keeps it closed to file managers.</p>
+    <ol><li>With Pro, install Shizuku, start it, and allow Fileglow.</li><li>Open the folder's More, App data with Shizuku. After a restart, start Shizuku again.</li></ol>
+
+    <h2>A mirror or Wi-Fi transfer stopped</h2>
+    <p>Mirrors run on Wi-Fi while charging, about every six hours. Wi-Fi transfer stops after 15 idle minutes, five wrong PINs, or leaving Wi-Fi.</p>
+    <ol><li>Tap Mirror now, or start Wi-Fi transfer again for a fresh PIN.</li></ol>
+
+    <h2>A drive is still listed after removing it</h2>
+    <p>Drives saved before come off the phone only when you disconnect them.</p>
+    <ol><li>Settings, Pro, Network shares and cloud drives, tap the drive, then Disconnect.</li></ol>
+
+    <h2>Pro is still locked</h2>
+    <ol><li>Sign in to the Play Store with the Google account that bought Pro.</li><li>Open Settings, Pro again.</li></ol>
+
+    <h2>The subscription will not start</h2>
+    <p>Support And Live API runs through Google Play. With no account on the phone, an old Play Store, or a copy not from Google Play, it cannot start.</p>
+    <ol><li>Open the Play Store once and check you are signed in.</li><li>Update Fileglow and the Play Store, then try the row again.</li></ol>
+    <p>To cancel: tap the same row, or Play Store, your profile, Payments and subscriptions.</p>
+    </div>
+""")
+
 page("faq.html", "Questions", "Answers to common questions about Fileglow, and what to try when something does not work.", f"""
     <div class="doc">
     <p class="lbl">Questions</p>
@@ -269,7 +363,7 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <p>Fileglow says why in plain words. Could not find the server: check the address. It turned the connection down: check the address, the port, and that sharing is on. It did not answer: check that it is on and on the same network as the phone. Also check the user name, the password and the shared folder's name. An SFTP server whose key changed is refused on purpose: if you reinstalled the server, remove the share and add it again.</p>
 
     <h2>Where are Google Drive and OneDrive?</h2>
-    <p>Not in Fileglow yet. Dropbox is the cloud drive you can connect today, with Pro.</p>
+    <p>Dropbox works today, with Pro. OneDrive comes in the next update, also with Pro. Google Drive is not in Fileglow yet.</p>
 
     <h2>I forgot my vault password</h2>
     <p>Nobody can open the vault without it, us included. That is what keeps it safe. Pick a password you can keep: a few words make a good one.</p>
