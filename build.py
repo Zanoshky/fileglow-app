@@ -277,6 +277,9 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <h2>I bought Pro but it is still locked</h2>
     <p>Fileglow checks the purchase with Google Play. Make sure the Play Store is signed in with the Google account that bought Pro, then open Settings, Pro again.</p>
 
+    <h2>What is Support And Live API?</h2>
+    <p>An optional subscription, 0.99 USD or EUR a month, for those who want to help more. It pays for bug fixes and for keeping the Dropbox and OneDrive links working. It unlocks nothing, and nothing is locked without it. Find it in Settings, under Support the developer. Cancel any time in Google Play.</p>
+
     <h2>Sort photos made no place folders</h2>
     <p>Only photos that carry a place get one. Fileglow may ask for Photo locations, only when no photo shows its place. Sort photos works on the phone's own storage; copy photos there first. Put photos back, in the folder's More, undoes a sort.</p>
 
