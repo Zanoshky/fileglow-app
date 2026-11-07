@@ -99,7 +99,7 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones, tablets, Android TV and Google TV.</p>
-    <p><strong>In the next update:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
+    <p><strong>New in 1.4.23:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="keys">
       <a class="key filled" href="guide.html">Read the guide</a>
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
@@ -177,7 +177,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
       <p>Fileglow is free with no ads. Pro is one optional payment through Google Play, yours for good: no subscription and no account. Browsing, previews, copy and move with Undo, the trash, zip and unzip, renaming many files at once, Find and Save a copy stay free, and so does every safety check. A Pro control says Pro under its name and opens the list below.</p>
       <dl class="rows plate">
         <div><dt>Network shares</dt><dd>Your NAS, PC or server over SMB, SFTP, FTP and WebDAV, as folders. Add one in Settings, Pro, Network shares and cloud drives, and press Try it before Save.</dd></div>
-        <div><dt>Dropbox and OneDrive</dt><dd>Your Dropbox or OneDrive, as folders. You sign in on their own page. OneDrive comes in the next update; until Microsoft finishes checking us, its sign in page says Unverified.</dd></div>
+        <div><dt>Dropbox and OneDrive</dt><dd>Your Dropbox or OneDrive, as folders. You sign in on their own page. Until Microsoft finishes checking us, OneDrive's sign in page says Unverified.</dd></div>
         <div><dt>Films from your shares</dt><dd>Play here plays them straight from the share, with subtitles beside the film; or Play in another app, or Fetch it whole, then open.</dd></div>
         <div><dt>Wi-Fi transfer</dt><dd>Files to and from a computer's browser. Off until you start it: open the address shown on the computer and type the PIN. One computer at a time; it stops on its own after 15 idle minutes, five wrong PINs, or when you leave Wi-Fi.</dd></div>
         <div><dt>Vault</dt><dd>Files sealed with a password of 15 or more characters and hidden from other apps. It locks two minutes after you leave Fileglow. A vault you made opens with its password, with or without Pro.</dd></div>
@@ -268,7 +268,7 @@ page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy w
     <ol><li>Settings, Pro, Network shares and cloud drives.</li><li>Pick SMB, SFTP, FTP or WebDAV and fill in the address, user and password.</li><li>Press Try it, then Save. The share shows on Home.</li></ol>
 
     <h2>Connect Dropbox or OneDrive (Pro)</h2>
-    <ol><li>Settings, Pro, Network shares and cloud drives.</li><li>Pick Dropbox, or OneDrive from the next update, and sign in on its own page.</li></ol>
+    <ol><li>Settings, Pro, Network shares and cloud drives.</li><li>Pick Dropbox or OneDrive and sign in on its own page.</li></ol>
 
     <h2>Send files to a computer (Pro)</h2>
     <ol><li>Settings, Pro, Wi-Fi transfer, and start it.</li><li>Open the address shown in the computer's browser and type the PIN.</li><li>It stops after 15 idle minutes, or when you leave Wi-Fi.</li></ol>
@@ -363,7 +363,7 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <p>Fileglow says why in plain words. Could not find the server: check the address. It turned the connection down: check the address, the port, and that sharing is on. It did not answer: check that it is on and on the same network as the phone. Also check the user name, the password and the shared folder's name. An SFTP server whose key changed is refused on purpose: if you reinstalled the server, remove the share and add it again.</p>
 
     <h2>Where are Google Drive and OneDrive?</h2>
-    <p>Dropbox works today, with Pro. OneDrive comes in the next update, also with Pro. Google Drive is not in Fileglow yet.</p>
+    <p>Dropbox and OneDrive both work, with Pro. Google Drive is not in Fileglow yet.</p>
 
     <h2>I forgot my vault password</h2>
     <p>Nobody can open the vault without it, us included. That is what keeps it safe. Pick a password you can keep: a few words make a good one.</p>
