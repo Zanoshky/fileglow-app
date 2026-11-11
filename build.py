@@ -99,7 +99,8 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones, tablets, Android TV and Google TV.</p>
-    <p><strong>New in 1.4.23:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
+    <p><strong>New in 1.7:</strong> photos open in Fileglow with pinch to zoom and a swipe through the folder, and one tap hands a photo to Pure Peek. A Details view with Name, Size, Modified and Kind; tap a heading to sort. Grids come in three sizes, and a pinch changes them. Copy, move and zip finish after you leave the app, and the Wi-Fi transfer PIN is out of notifications. Greek, Cyrillic, Vietnamese and more letters show in the app's own fonts, big folders open over Shizuku, and Insider, an optional plan, brings new features first.</p>
+    <p><strong>Since 1.4.23:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="keys">
       <a class="key filled" href="guide.html">Read the guide</a>
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
@@ -137,8 +138,8 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
     <div class="with-shot">
       <div class="doc">
         <h2>Files</h2>
-        <p>Files opens your storage as folders. Each folder is a list or a grid, sorted by name, date, size or type, and Fileglow remembers the choice per folder (sort, grid or list and hidden files sit at the top of the folder's More, with defaults in Settings). On a tablet or a phone on its side you get columns: the folder and a preview beside it.</p>
-        <p>Tap a file to open it. Fileglow previews photos, videos, PDFs, music, text, code and what is inside a zip. Touch and hold a row, or tap the tick in the header, to pick files; tap more rows to add them.</p>
+        <p>Files opens your storage as folders. Each folder is a list, a Details view or a grid, sorted by name, date, size or type, and Fileglow remembers the choice per folder (sort, the view and hidden files sit at the top of the folder's More, with defaults in Settings). Details shows Name, Size, Modified and Kind as columns, as many as the screen has room for; tap a heading to sort by it. A grid is small, medium or large, and a pinch on it steps the size. On a tablet or a phone on its side you get columns: the folder and a preview beside it.</p>
+        <p>Tap a file to open it. Fileglow previews photos, videos, PDFs, music, text, code and what is inside a zip. A photo on the phone opens in Fileglow's own viewer: pinch or double tap to zoom, and swipe left and right through the folder's photos. At the top, Open in Pure Peek hands it to Pure Peek, the full viewer, or Get Pure Peek when it is not installed. Turn the viewer off in Settings, Files, Open photos here. Touch and hold a row, or tap the tick in the header, to pick files; tap more rows to add them.</p>
         <dl class="rows plate">
           <div><dt>On a file or picked files</dt><dd>Open with, Send to another app, Copy, Move, Rename, Zip, Unzip here, Move to the trash, Delete for good, Details, Copy the path and Pin to Home.</dd></div>
           <div><dt>Copy and move</dt><dd>Pick Copy or Move, open the folder you want, then tap Paste here (or Move here).</dd></div>
@@ -158,6 +159,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
           <div><dt>Trash and Undo</dt><dd>Move to the trash puts things in a trash on that volume, kept 7, 30 or 90 days (30 unless you change it). After a job a note offers Undo, and one Undo brings everything back.</dd></div>
           <div><dt>Delete for good</dt><dd>Always asks first, and cannot be undone.</dd></div>
           <div><dt>Checked copies</dt><dd>A copy is checked whole before its original is removed, and one file job runs at a time.</dd></div>
+          <div><dt>Leave the app</dt><dd>Copy, move, zip and unzip keep going after you leave Fileglow or the screen goes off. A notice shows the job, its progress and Stop.</dd></div>
           <div><dt>A copy was cut short</dt><dd>If Fileglow was closed while it copied, zipped or unzipped, the half made copy goes to the trash next time, with a note. The originals are never touched.</dd></div>
         </dl>
       </div>
@@ -174,12 +176,12 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
 
     <div class="doc">
       <h2>Pro</h2>
-      <p>Fileglow is free with no ads. Pro is one optional payment through Google Play, yours for good: no subscription and no account. Browsing, previews, copy and move with Undo, the trash, zip and unzip, renaming many files at once, Find and Save a copy stay free, and so does every safety check. A Pro control says Pro under its name and opens the list below.</p>
+      <p>Fileglow is free with no ads. Pro is one optional payment through Google Play, yours for good: no subscription needed and no account. Browsing, previews, copy and move with Undo, the trash, zip and unzip, renaming many files at once, Find and Save a copy stay free, and so does every safety check. A Pro control says Pro under its name and opens the list below.</p>
       <dl class="rows plate">
         <div><dt>Network shares</dt><dd>Your NAS, PC or server over SMB, SFTP, FTP and WebDAV, as folders. Add one in Settings, Pro, Network shares and cloud drives, and press Try it before Save.</dd></div>
         <div><dt>Dropbox and OneDrive</dt><dd>Your Dropbox or OneDrive, as folders. You sign in on their own page. Until Microsoft finishes checking us, OneDrive's sign in page says Unverified.</dd></div>
         <div><dt>Films from your shares</dt><dd>Play here plays them straight from the share, with subtitles beside the film; or Play in another app, or Fetch it whole, then open.</dd></div>
-        <div><dt>Wi-Fi transfer</dt><dd>Files to and from a computer's browser. Off until you start it: open the address shown on the computer and type the PIN. One computer at a time; it stops on its own after 15 idle minutes, five wrong PINs, or when you leave Wi-Fi.</dd></div>
+        <div><dt>Wi-Fi transfer</dt><dd>Files to and from a computer's browser. Off until you start it: open the address shown on the computer and type the PIN. The PIN shows only on the transfer page in Fileglow, never in the notification. One computer at a time; it stops on its own after 15 idle minutes, five wrong PINs, or when you leave Wi-Fi.</dd></div>
         <div><dt>Vault</dt><dd>Files sealed with a password of 15 or more characters and hidden from other apps. It locks two minutes after you leave Fileglow. A vault you made opens with its password, with or without Pro.</dd></div>
         <div><dt>Archives as folders</dt><dd>Open a zip, 7z, rar (RAR5 too) or tar as a folder, read only. Copy files out to change them; moving out of an archive makes a copy. A file that unpacks to more than the free space is stopped before the phone fills.</dd></div>
         <div><dt>Search inside files</dt><dd>Find files by the words in them, from a private index on the phone.</dd></div>
@@ -187,7 +189,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
         <div><dt>Folder mirrors</dt><dd>A phone folder kept copied to a folder on your share, on Wi-Fi while charging. Each file is read back and checked, and nothing is ever deleted.</dd></div>
         <div><dt>Find duplicates</dt><dd>Files with the very same bytes, checked whole. The oldest stays; the rest go to the trash, so Undo puts them back.</dd></div>
         <div><dt>Sort photos</dt><dd>Into folders by where and when each was taken, from a place list inside the app. A preview shows the folder tree first and nothing moves until you press Sort; Put photos back, in the folder's More, undoes it, even days later.</dd></div>
-        <div><dt>App data with Shizuku</dt><dd>Android/data and obb through the Shizuku app, on Android 11 and newer.</dd></div>
+        <div><dt>App data with Shizuku</dt><dd>Android/data and obb through the Shizuku app, on Android 11 and newer. Folders of many thousand files open too.</dd></div>
       </dl>
     </div>
 
@@ -303,6 +305,10 @@ page("runbook.html", "Runbook", "When something in Fileglow goes wrong: a share 
     <h2>A share will not connect</h2>
     <p>Fileglow says why: the server was not found, turned the connection down, or did not answer.</p>
     <ol><li>Check the address, the port, and that sharing is on.</li><li>Check the server is on the same network as the phone.</li><li>Check the user name, password and the shared folder's name.</li><li>An SFTP server whose key changed is refused on purpose. If you reinstalled it, remove the share and add it again.</li></ol>
+
+    <h2>It says a share is not on a home or office network</h2>
+    <p>Plain FTP, and WebDAV with HTTPS off, send the password unencrypted, so Fileglow sends it only to a server at a home or office address, never across the internet or on a cafe's Wi-Fi. A mirror to such a share runs only on the Wi-Fi its server is on.</p>
+    <ol><li>Turn on HTTPS for WebDAV, or FTPS, or use SFTP.</li><li>Or use the server's local address while you are on its network.</li></ol>
 
     <h2>It says a copy was cut short</h2>
     <p>Fileglow was closed while it copied, zipped or unzipped. The half made copy went to the trash; the originals were not touched.</p>

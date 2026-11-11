@@ -305,6 +305,10 @@ footer .lic { flex-basis: 100%; font-size: .9375rem; }
     <p>Fileglow says why: the server was not found, turned the connection down, or did not answer.</p>
     <ol><li>Check the address, the port, and that sharing is on.</li><li>Check the server is on the same network as the phone.</li><li>Check the user name, password and the shared folder's name.</li><li>An SFTP server whose key changed is refused on purpose. If you reinstalled it, remove the share and add it again.</li></ol>
 
+    <h2>It says a share is not on a home or office network</h2>
+    <p>Plain FTP, and WebDAV with HTTPS off, send the password unencrypted, so Fileglow sends it only to a server at a home or office address, never across the internet or on a cafe's Wi-Fi. A mirror to such a share runs only on the Wi-Fi its server is on.</p>
+    <ol><li>Turn on HTTPS for WebDAV, or FTPS, or use SFTP.</li><li>Or use the server's local address while you are on its network.</li></ol>
+
     <h2>It says a copy was cut short</h2>
     <p>Fileglow was closed while it copied, zipped or unzipped. The half made copy went to the trash; the originals were not touched.</p>
     <ol><li>Copy or move again.</li></ol>
