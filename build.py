@@ -156,7 +156,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
         <p>Your files may be the only copy of your photos, so not losing them comes before everything else. All of this is free.</p>
         <dl class="rows plate">
           <div><dt>Names already here</dt><dd>When a paste meets names that are taken, Fileglow asks once: Keep both (the new ones get a number), Skip them, or Replace. Replace keeps the old file in the trash and merges folders; it is only offered on the phone's own storage.</dd></div>
-          <div><dt>Trash and Undo</dt><dd>Move to the trash puts things in a trash on that volume, kept 7, 30 or 90 days (30 unless you change it). After a job a note offers Undo, and one Undo brings everything back.</dd></div>
+          <div><dt>Trash and Undo</dt><dd>Move to the trash puts things in a trash on that volume, kept 7, 30 or 90 days (30 unless you change it). After a job a note offers Undo, and one Undo brings everything back. The trash page shows a picture of each thing; tap one to look at it without taking it out. Put everything back sends all of it home at once, and Choose what to put back lets you pick (hold one to start).</dd></div>
           <div><dt>Delete for good</dt><dd>Always asks first, and cannot be undone.</dd></div>
           <div><dt>Checked copies</dt><dd>A copy is checked whole before its original is removed, and one file job runs at a time.</dd></div>
           <div><dt>Leave the app</dt><dd>Copy, move, zip and unzip keep going after you leave Fileglow or the screen goes off. A notice shows the job, its progress and Stop.</dd></div>
@@ -187,7 +187,8 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
         <div><dt>Search inside files</dt><dd>Find files by the words in them, from a private index on the phone.</dd></div>
         <div><dt>Two tiles</dt><dd>Two folders at once, side by side on a wide screen and stacked on a phone, with copy or move to the other tile; save them as a workspace on Home.</dd></div>
         <div><dt>Folder mirrors</dt><dd>A phone folder kept copied to a folder on your share, on Wi-Fi while charging. Each file is read back and checked, and nothing is ever deleted.</dd></div>
-        <div><dt>Find duplicates</dt><dd>Files with the very same bytes, checked whole. The oldest stays; the rest go to the trash, so Undo puts them back.</dd></div>
+        <div><dt>Find duplicates</dt><dd>Files with the very same bytes, checked whole, on a page of their own with a picture of each. The oldest stays unless you keep another; Compare shows a set side by side. The rest go to the trash, so Undo puts them back.</dd></div>
+        <div><dt>Similar photos</dt><dd>Shots taken seconds apart that look alike, such as a burst or a few tries at one picture, even when a few pixels differ. Each set suggests its sharpest photo to keep, and nothing is chosen until you tap: Choose all but the sharpest, or Keep only this on the one you like. Compare shows sharpness, time and size side by side. Photos go to the trash, so Undo puts them back.</dd></div>
         <div><dt>Sort photos</dt><dd>Into folders by where and when each was taken, from a place list inside the app. A preview shows the folder tree first and nothing moves until you press Sort; Put photos back, in the folder's More, undoes it, even days later.</dd></div>
         <div><dt>App data with Shizuku</dt><dd>Android/data and obb through the Shizuku app, on Android 11 and newer. Folders of many thousand files open too.</dd></div>
       </dl>
@@ -258,7 +259,7 @@ page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy w
     <p>A few taps each. Recipes marked Pro need Pro; the rest are free.</p>
 
     <h2>Get back something you deleted</h2>
-    <ol><li>Tap Undo in the note after the job.</li><li>Missed it? Open the trash from Home, pick the files and put them back.</li></ol>
+    <ol><li>Tap Undo in the note after the job.</li><li>Missed it? Open the trash from Home. Tap a thing to look at it.</li><li>Put everything back, or Choose what to put back and tap the ones you want.</li></ol>
 
     <h2>Copy without writing over anything</h2>
     <ol><li>Pick the files, then Copy.</li><li>Open the folder you want and tap Paste here.</li><li>If names are taken, pick Keep both. The new ones get a number.</li></ol>
@@ -277,6 +278,9 @@ page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy w
 
     <h2>Free space from duplicates (Pro)</h2>
     <ol><li>Open a folder, then More, Find duplicates.</li><li>Check the list. The oldest copy stays; the rest go to the trash, so Undo puts them back.</li></ol>
+
+    <h2>Keep the best shot of a burst (Pro)</h2>
+    <ol><li>Open a folder, such as DCIM, then More, Similar photos.</li><li>Each set shows the sharpest first. Tap Compare to see them side by side.</li><li>Choose all but the sharpest, or Keep only this on the one you like, then Trash and tap again. Undo puts them back.</li></ol>
 
     <h2>Sort photos by place and date (Pro)</h2>
     <ol><li>Open DCIM or Pictures, then More, Sort photos into folders.</li><li>Look at the preview tree, then press Sort.</li><li>Changed your mind? More, Put photos back.</li></ol>
@@ -360,7 +364,7 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <p>Only for what you set up: your own network shares and Dropbox, Wi-Fi transfer to your computer, and Google Play for the Pro purchase. Fileglow has no server of its own. See the <a href="{SITE}/privacy">privacy policy</a>.</p>
 
     <h2>I deleted something by mistake</h2>
-    <p>Tap Undo in the note that shows after the job, or open the trash from Home (or Settings, Home, files and trash, Open the trash). Things stay there 7, 30 or 90 days, as you set. Only Delete for good skips the trash, and it always asks first. Network shares have no trash, so be careful there.</p>
+    <p>Tap Undo in the note that shows after the job, or open the trash from Home (or Settings, Home, files and trash, Open the trash) and use Put everything back or Choose what to put back. Things stay there 7, 30 or 90 days, as you set. Only Delete for good skips the trash, and it always asks first. Network shares have no trash, so be careful there.</p>
 
     <h2>It says a copy was cut short</h2>
     <p>Fileglow was closed while it copied, zipped or unzipped. The half made copy was put in the trash and the originals were not touched, so you can copy or move again.</p>
