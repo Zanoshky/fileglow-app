@@ -28,12 +28,6 @@ def shot(img, alt, name, line, lazy=True):
             f'<figcaption>{name}<span>{line}</span></figcaption></figure>')
 
 
-def tv(img, alt, name, line):
-    stem = img.rsplit(".", 1)[0]
-    src = f'srcset="img/{stem}-480.webp 480w, img/{stem}-960.webp 960w" sizes="(min-width: 1140px) 540px, (min-width: 640px) 48vw, 100vw"'
-    return (f'<li><figure class="tv"><img src="img/{img}" {src} alt="{alt}" width="960" height="540" loading="lazy" decoding="async">'
-            f'<figcaption>{name}<span>{line}</span></figcaption></figure></li>')
-
 
 def page(name, title, desc, body):
     for bad in ("\u2014", "\u2013", " - "):
@@ -95,10 +89,10 @@ PRIVACY_ALT = "Privacy: red ban chips No ads, No tracking, No analytics, No cras
 DELETE_ALT = "A sheet over the folder list in Light: Delete for good? DCIM will be gone, not in the trash. This cannot be undone. With Cancel and Delete."
 TERMINAL_ALT = "Fileglow Home in a blue Phosphor terminal look: internal storage 1.87 GB free, the kind tiles, Recent and Jumps in glowing mono type, with lowercase labels in the bar."
 
-page("index.html", "Home", "The user guide for Fileglow, the private and reliable file manager for Android phones, tablets and TVs.", f"""
+page("index.html", "Home", "The user guide for Fileglow, the private and reliable file manager for Android phones and tablets.", f"""
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
-    <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones, tablets, Android TV and Google TV.</p>
+    <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones and tablets.</p>
     <p><strong>New in 1.7:</strong> photos open in Fileglow with pinch to zoom and a swipe through the folder, and one tap hands a photo to Pure Peek. A Details view with Name, Size, Modified and Kind; tap a heading to sort. Grids come in three sizes, and a pinch changes them. Copy, move and zip finish after you leave the app, and the Wi-Fi transfer PIN is out of notifications. Greek, Cyrillic, Vietnamese and more letters show in the app's own fonts, big folders open over Shizuku, and Insider, an optional plan, brings new features first.</p>
     <p><strong>Since 1.4.23:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
     <div class="keys">
@@ -111,13 +105,9 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
       <li>{shot("menu.jpg", MENU_ALT, "More", "Everything a folder can do.")}</li>
       <li>{shot("settings.jpg", SETTINGS_ALT, "Settings", "The last item in the bar.")}</li>
     </ul>
-    <ul class="tvshots">
-      {tv("tv-files.jpg", "Fileglow on a TV: the side rail on the left, a Holiday folder as a grid with one photo in the blue focus ring, and beside it a This file panel with Actions and Select over a large preview.", "On a TV", "A side rail and the remote.")}
-      {tv("tv-actions.jpg", "A sheet from the right on a TV for the photo bled.jpg: Open in focus, then Open with, Copy, Move and Rename, over the dimmed folder.", "Actions", "Sheets come in from the right.")}
-    </ul>
 """)
 
-page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings, the file safety promise, the Pro tools and Android TV.", f"""
+page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings, the file safety promise and the Pro tools.", f"""
     <p class="lbl">Guide</p>
     <h1>How Fileglow works</h1>
 
@@ -220,25 +210,6 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
       {shot("terminal.jpg", TERMINAL_ALT, "A terminal look", "From Phosphor, the launcher.")}
     </div>
 
-    <div class="doc">
-      <h2>On Android TV and Google TV</h2>
-      <p>Fileglow runs on Android TV and Google TV too: open files from a USB drive in other apps, copy, move and delete with the remote, and reach your network shares.</p>
-      <dl class="rows plate">
-        <div><dt>The side rail</dt><dd>Home, Files, Find and Settings sit in a rail on the left instead of the bar. Right from the rail goes back to the row you left.</dd></div>
-        <div><dt>The remote</dt><dd>Move with the arrows; a blue ring shows where you are. OK on a row opens it. Beside the files a panel for This file or This folder holds Actions and Select; the Menu key opens Actions too. In Select, OK on a row picks it.</dd></div>
-        <div><dt>Sheets from the right</dt><dd>Menus and questions slide in from the right side. Back closes them and puts you where you were.</dd></div>
-        <div><dt>Open with</dt><dd>Fileglow lists the apps on the TV that open the file. A TV has no share sheet, so Open with sends a file to one app.</dd></div>
-        <div><dt>USB drives</dt><dd>Plug in a USB drive and it shows under Drives on Home, above This TV.</dd></div>
-        <div><dt>Open on your phone</dt><dd>A TV has no browser, so links in Settings (this guide, the report page, the privacy policy) open a QR code. Point your phone's camera at it to open the page there.</dd></div>
-        <div><dt>Look</dt><dd>A TV starts on Follow the TV, light or dark as the TV's own dark mode setting says. Match my launcher and installing apps are not on a TV.</dd></div>
-      </dl>
-    </div>
-    <ul class="tvshots">
-      {tv("tv-home.jpg", "Fileglow Home on a TV with the side rail, a Drives card with This TV in focus and the line Plug in a USB drive and it shows here, Recent pictures, the kind tiles and Jumps.", "Home on a TV", "Drives, recent and jumps.")}
-      {tv("tv-files.jpg", "A Holiday folder on a TV as a grid with one photo in the blue focus ring, and beside it a This file panel with Actions and Select over a large preview of a lake.", "Files", "Actions and Select beside the files.")}
-      {tv("tv-open-with.jpg", "A sheet from the right on a TV titled Open Train tickets.pdf with, offering Pure Peek, over the dimmed Documents folder.", "Open with", "The apps on the TV that open it.")}
-      {tv("tv-link-qr.jpg", "Help and feedback on a TV under a sheet from the right titled User guide, with a QR code, Open on your phone and the address zanoshky.github.io/fileglow-app, and a Done key.", "Open on your phone", "Links become QR codes.")}
-    </ul>
 
     <div class="with-shot">
       <div class="doc">
@@ -394,7 +365,7 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <p>It stops on its own after 15 idle minutes, after five wrong PINs, or when the phone leaves Wi-Fi, and it lets in one computer at a time. Start it again for a fresh PIN.</p>
 
     <h2>I cannot install an app file</h2>
-    <p>Fileglow does not install apps itself. Install with Android's installer opens the folder in the phone's Files app; tap the file there. On a TV, use an app that installs apps, or get the app from Google Play.</p>
+    <p>Fileglow does not install apps itself. Install with Android's installer opens the folder in the phone's Files app; tap the file there.</p>
 
     <h2>Android/data is empty</h2>
     <p>Android keeps it closed. With Pro, App data with Shizuku opens it on Android 11 and newer, once Shizuku is installed and running and Fileglow is allowed in its list of apps.</p>
@@ -402,8 +373,6 @@ page("faq.html", "Questions", "Answers to common questions about Fileglow, and w
     <h2>No launcher look</h2>
     <p>Match my launcher needs Phosphor or Hyprtile as your home screen. Without them, pick a ready look in Settings, Look.</p>
 
-    <h2>On a TV, how do I open a link?</h2>
-    <p>A TV has no browser, so a link opens a QR code. Point your phone's camera at it to open the page on your phone.</p>
     </div>
 """)
 
@@ -435,8 +404,8 @@ page("report.html", "Report a bug", "How to report a Fileglow bug or ask for a f
     <h2>What helps</h2>
     <dl class="rows plate">
       <div><dt>App version</dt><dd>Settings, About, or Android settings, Apps, Fileglow.</dd></div>
-      <div><dt>Device and Android version</dt><dd>Android settings, About phone (on a TV, Settings, System, About).</dd></div>
-      <div><dt>Which screen or feature</dt><dd>Home, Files, Find, a file action, the trash, a share, a Pro tool, Settings, or the TV rail and remote.</dd></div>
+      <div><dt>Device and Android version</dt><dd>Android settings, About phone.</dd></div>
+      <div><dt>Which screen or feature</dt><dd>Home, Files, Find, a file action, the trash, a share, a Pro tool, or Settings.</dd></div>
       <div><dt>Steps</dt><dd>What you did, one step per line, so we can do the same.</dd></div>
       <div><dt>Expected and actual</dt><dd>What you thought would happen, and what happened.</dd></div>
       <div><dt>A picture or a recording</dt><dd>A screenshot or a short screen recording. Drag it into the form.</dd></div>
