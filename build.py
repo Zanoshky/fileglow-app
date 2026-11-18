@@ -9,7 +9,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/fileglow-app"
-PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.fileglow"
+PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.fileglow&amp;referrer=utm_source%3Dgithub%26utm_medium%3Dguide%26utm_campaign%3Dfileglow-2026-11"
 SITE = "https://fileglow.zanoski.com"
 MAIL = "support@zanoski.com"
 NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("cookbook.html", "Cookbook"), ("runbook.html", "Runbook"), ("faq.html", "Questions"), ("report.html", "Report a bug")]

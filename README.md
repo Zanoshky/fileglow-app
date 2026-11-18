@@ -7,7 +7,7 @@
 <p align="center">A private, reliable, simple file manager for Android phones, tablets and TVs. It never writes over a file. Undo, trash, no ads.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.fileglow"><b>Google Play</b></a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.fileglow&amp;referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dfileglow-2026-11"><b>Google Play</b></a> ·
   <a href="https://fileglow.zanoski.com"><b>fileglow.zanoski.com</b></a> ·
   <a href="https://zanoshky.github.io/fileglow-app/"><b>User guide</b></a> ·
   <a href="https://github.com/Zanoshky/fileglow-app/issues/new/choose"><b>Report a bug</b></a>
