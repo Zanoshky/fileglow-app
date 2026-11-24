@@ -93,6 +93,7 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones and tablets.</p>
+    <p><strong>New in 1.28:</strong> Settings, Language: pick the app's language, or follow the phone. Fileglow speaks 23 languages, and the same choice is in the phone's Settings under Apps, Fileglow, Language.</p>
     <p><strong>New in 1.25:</strong> a slim Home card that shows what can go, every kind with its size, then Trash, Vault and Wi-Fi transfer, then your shares and drives, and a running copy with Stop in the header. Choose what Home shows in Settings. Song covers from the album folder and ePub covers, Find on my network for shares, checksums in Details, look settings with previews, and terminal themes that shade each kind of file. The vault stays open while you use it, and updates never block the screen.</p>
     <p><strong>New in 1.7:</strong> photos open in Fileglow with pinch to zoom and a swipe through the folder, and one tap hands a photo to Pure Peek. A Details view with Name, Size, Modified and Kind; tap a heading to sort. Grids come in three sizes, and a pinch changes them. Copy, move and zip finish after you leave the app, and the Wi-Fi transfer PIN is out of notifications. Greek, Cyrillic, Vietnamese and more letters show in the app's own fonts, big folders open over Shizuku, and Insider, an optional plan, brings new features first.</p>
     <p><strong>Since 1.4.23:</strong> OneDrive (Pro), RAR5 archives, sort, grid or list and hidden files at the top of the folder menu, bigger layouts on tablets and 4K, much faster copies out of archives and big folders, and zip bomb protection. The <a href="cookbook.html">cookbook</a> has short recipes and the <a href="runbook.html">runbook</a> has fixes.</p>
@@ -191,6 +192,7 @@ page("guide.html", "Guide", "How to use Fileglow: Home, Files, Find and Settings
         <p>Settings is the last item in the bar: cards of rows, each saying what is set now. A row opens its own small page; the arrow at its top left takes you back.</p>
         <dl class="rows plate">
           <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), where Fileglow starts, Light, Dark, or Black, true black for OLED. With Phosphor or Hyprtile as your home screen, turn on Match my launcher to take its look; or pick a ready launcher look, and fine tune the theme, picture, glass and CRT tube. The look settings open on pages that show a small preview of each choice, and the terminal themes shade each kind of file in its own colour.</dd></div>
+          <div><dt>Language</dt><dd>Pick the language Fileglow speaks, or Follow the phone. The page shows what it is speaking now. Words, dates and numbers follow your pick, and the phone itself stays as it is.</dd></div>
           <div><dt>Home, files and trash</dt><dd>Show the verdict on Home, show tools on Home, show recent on Home, folders first, hidden files, light up the places you use most, the preview column, the text size of the lists, ask before moving to the trash, how long the trash keeps things, and Open the trash.</dd></div>
           <div><dt>Pro</dt><dd>The Pro tools and the buy key, then Network shares and cloud drives, Wi-Fi transfer and Folder mirrors.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission Fileglow holds and why, how shares and transfers are kept safe, and the privacy policy in full.</dd></div>
@@ -262,6 +264,9 @@ page("cookbook.html", "Cookbook", "Short Fileglow recipes: undo a delete, copy w
 
     <h2>Keep a folder copied to your NAS (Pro)</h2>
     <ol><li>Open the folder, then More, Mirror to a share.</li><li>Pick the share folder. It runs on Wi-Fi while charging, and never deletes.</li></ol>
+
+    <h2>Change the language</h2>
+    <ol><li>Settings, Language.</li><li>Pick a language, or Follow the phone to use the phone's own.</li></ol>
 
     <h2>Wear your launcher's look</h2>
     <ol><li>Settings, Look.</li><li>With Phosphor or Hyprtile as your home screen, turn on Match my launcher. Without them, pick a launcher look.</li></ol>
