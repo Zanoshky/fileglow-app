@@ -93,6 +93,7 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones and tablets.</p>
+    <p><strong>New in 1.31:</strong> Text sizes are simpler and easier to read.</p>
     <p><strong>New in 1.30:</strong> Page titles are smaller, so more of each page fits on the screen.</p>
     <p><strong>New in 1.29:</strong> Settings is tidier: About has a page of its own, and Privacy, Help and About sit at the end.</p>
     <p><strong>New in 1.28:</strong> Settings, Language: pick the app's language, or follow the phone. Fileglow speaks 23 languages, and the same choice is in the phone's Settings under Apps, Fileglow, Language.</p>
