@@ -93,6 +93,7 @@ page("index.html", "Home", "The user guide for Fileglow, the private and reliabl
     <p class="lbl">User guide</p>
     <h1>Fileglow</h1>
     <p class="lede">A file manager built on privacy first, then reliability, then simplicity. No ads, no account, no tracking, and it never writes over your files. Free, with one optional Pro payment for the power tools. On phones and tablets.</p>
+    <p><strong>New in 1.30:</strong> Page titles are smaller, so more of each page fits on the screen.</p>
     <p><strong>New in 1.29:</strong> Settings is tidier: About has a page of its own, and Privacy, Help and About sit at the end.</p>
     <p><strong>New in 1.28:</strong> Settings, Language: pick the app's language, or follow the phone. Fileglow speaks 23 languages, and the same choice is in the phone's Settings under Apps, Fileglow, Language.</p>
     <p><strong>New in 1.25:</strong> a slim Home card that shows what can go, every kind with its size, then Trash, Vault and Wi-Fi transfer, then your shares and drives, and a running copy with Stop in the header. Choose what Home shows in Settings. Song covers from the album folder and ePub covers, Find on my network for shares, checksums in Details, look settings with previews, and terminal themes that shade each kind of file. The vault stays open while you use it, and updates never block the screen.</p>
